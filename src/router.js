@@ -4,10 +4,10 @@ import Layout from "./components/Layout";
 
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
-// import Allocation from "./pages/Allocation";
+import Allocation from "./pages/Allocation";
 // import AllocationManage from "./pages/Allocation/AllocationManage";
-// import Departament from "./pages/Departament";
-// import Professor from "./pages/Professor";
+import Department from "./pages/Department";
+import Professor from "./pages/Professor";
 
 const routes = [
   {
@@ -16,32 +16,32 @@ const routes = [
     visible: false,
     component: Home,
   },
-  // {
-  //   path: "/allocations",
-  //   name: "Allocations",
-  //   component: Allocation,
-  // },
+   {
+     path: "/allocations",
+     name: "Allocations",
+     component: Allocation,
+   },
   // {
   //   path: "/allocations/:id",
   //   name: "Allocations",
   //   visible: false,
   //   component: AllocationManage,
   // },
-  // {
-  //   path: "/departament",
-  //   name: "Departament",
-  //   component: Departament,
-  // },
+   {
+     path: "/departament",
+     name: "Departament",
+     component: Department,
+   },
   {
     path: "/courses",
     name: "Courses",
     component: Courses,
   },
-  // {
-  //   path: "/professor",
-  //   name: "Professor",
-  //   component: Professor,
-  // },
+   {
+     path: "/professor",
+     name: "Professor",
+     component: Professor,
+   },
 ];
 
 const Router = () => (
